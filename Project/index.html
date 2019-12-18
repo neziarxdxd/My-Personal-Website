@@ -25,10 +25,52 @@
 .header1{
   font-weight: 900;
   color: #2f2e40;
-  font-size: 8vw;
+  font-size: 72pt;
   }
 .fa {
   color: #2f2e40;
+}
+
+#test{
+    
+    
+    
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
   </style>
@@ -36,7 +78,7 @@
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #2f2e40;">
-    <a class="navbar-brand" href="#">    @raizen</a>
+    <a class="navbar-brand" href="#">    @raizengxd</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,6 +96,12 @@
                 <i class="fa fa-rocket" style="color: white;"></i>
                 Projects<span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+              
+              <a class="nav-link" href="#">
+                <i class="fa fa-user" style="color: white;"></i>
+                About me<span class="sr-only">(current)</span></a>
+            </li>
           
           </ul>
          
@@ -62,8 +110,8 @@
 <div class="container">
         <div class="row" style="padding-top:10em">
                 <div class="col-sm-6">
-                 <h1 style="color: #2f2e40;"> Hello, I'm </h1 s><h1 class="header1">Raizen</h1>
-                    <p>here are many more ways to style your fonts, and many things are possible through CSS. We are simply providing a few ideas to get you started. For more ideas, try Google searching "css text effects" and browse through many of the ideas that are already on the web!</p>
+                 <h1 style="color: #2f2e40; " id="test"> Hello, I'm </h1 ><h1 class="header1" id="test">Raizen</h1>
+                    <p style="font-size: 1.5rem;" id="test">Welcome to my portfolio, I just really love doing projects and making my life easy</p>
                     <div style="font-size: 2rem;">
                       
 
@@ -76,7 +124,7 @@
                 
                 <div class="col-sm-6">
                     
-                    <img src="image.svg"  style="width:100%"> 
+                    <img id= "test" src="image.svg"  style="width:100%"> 
                 </div>
 
                
@@ -90,6 +138,7 @@
             <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
             <script src="assets/js/vendor/popper.min.js"></script>
             <script src="dist/js/bootstrap.min.js"></script>
+            
 
 
 </body>
